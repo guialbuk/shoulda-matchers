@@ -20,7 +20,6 @@ module AcceptanceTests
     def create_generic_bundler_project
       fs.clean
       fs.create
-      run_command! 'bundle init'
     end
 
     def add_shoulda_matchers_to_project(options = {})
