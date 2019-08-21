@@ -117,11 +117,11 @@ if Gem::Requirement.new('>= 2.5.0').satisfied_by?(Gem::Version.new(RUBY_VERSION)
 
     gem 'rails', '~> 6.0.0'
     gem 'puma', '~> 3.11'
-    gem 'bootsnap', '>= 1.4.1', require: false
+    gem 'bootsnap', '>= 1.4.2', require: false
     gem 'sass-rails', '~> 5.0'
-    gem 'webpacker', '>= 4.0.0.rc3'
+    gem 'webpacker', '~> 4.0'
     gem 'turbolinks', '~> 5'
-    gem 'jbuilder', '~> 2.5'
+    gem 'jbuilder', '~> 2.7'
     gem 'bcrypt', '~> 3.1.7'
     gem 'capybara', '>= 2.15'
     gem 'listen', '>= 3.0.5', '< 3.2'
