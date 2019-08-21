@@ -26,7 +26,7 @@ gem "spring-commands-rspec"
 gem "minitest-reporters"
 gem "rspec-rails", "~> 3.6"
 gem "shoulda-context", "~> 1.2.0"
-gem "rails", "~> 6.0.0.beta3"
+gem "rails", "~> 6.0.0"
 gem "puma", "~> 3.11"
 gem "bootsnap", ">= 1.4.1", require: false
 gem "sass-rails", "~> 5.0"
