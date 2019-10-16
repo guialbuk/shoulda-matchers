@@ -23,10 +23,6 @@ module UnitTests
       rails_version <= 4
     end
 
-    def rails_gte_4_1?
-      rails_version >= 4.1
-    end
-
     def rails_gte_4_2?
       rails_version >= 4.2
     end

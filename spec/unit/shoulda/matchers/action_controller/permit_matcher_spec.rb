@@ -508,8 +508,7 @@ describe Shoulda::Matchers::ActionController::PermitMatcher, type: :controller d
     end
 
     context 'when given :update' do
-      if rails_gte_4_1?
-        it 'PATCHes to the controller' do
+      it 'PATCHes to the controller' do
           controller = ActionController::Base.new
           context = build_context
           matcher = permit(:name).for(:update).in_context(context)
@@ -523,22 +522,6 @@ describe Shoulda::Matchers::ActionController::PermitMatcher, type: :controller d
             context: context,
           )
         end
-      else
-        it 'PUTs to the controller' do
-          controller = ActionController::Base.new
-          context = build_context
-          matcher = permit(:name).for(:update).in_context(context)
-
-          matcher.matches?(controller)
-
-          expect_to_have_made_controller_request(
-            verb: :put,
-            action: :update,
-            params: {},
-            context: context,
-          )
-        end
-      end
     end
 
     context 'when given a custom action and verb' do
