@@ -330,7 +330,7 @@ module Shoulda
         def default_verb
           case action
             when :create then :post
-            when :update then RailsShim.verb_for_update
+            when :update then :put
           end
         end
 

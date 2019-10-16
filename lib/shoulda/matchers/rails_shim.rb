@@ -3,10 +3,6 @@ module Shoulda
     # @private
     module RailsShim
       class << self
-        def action_pack_gte_4_1?
-          Gem::Requirement.new('>= 4.1').satisfied_by?(action_pack_version)
-        end
-
         def action_pack_gte_5?
           Gem::Requirement.new('>= 5').satisfied_by?(action_pack_version)
         end
@@ -99,14 +95,6 @@ module Shoulda
             connection.data_sources
           else
             connection.tables
-          end
-        end
-
-        def verb_for_update
-          if action_pack_gte_4_1?
-            :patch
-          else
-            :put
           end
         end
 
